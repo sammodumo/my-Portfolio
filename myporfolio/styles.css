@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(11, 11, 63);
+    color: azure;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 75px;
+    background-color: rgb(52, 52, 150);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(118, 118, 255);
+    font-size: 1.04rem;
+}
+
+#element {
+    color: rgb(169, 98, 236);
+}
+
+.left {
+    font-size: 1.3rem;
+}
+
+.fisrtSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+}
+
+.fisrtSection>div {
+    width: 30%;
+}
+
+.leftSection {
+    font-size: 2rem;
+    margin: 70px 0;
+
+}
+
+.leftSection .buttons {
+    padding: 50px 0;
+
+}
+
+.leftSection .btn {
+    padding: 10px;
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.leftSection .btn:hover {
+    background-color: rgb(170, 168, 166);
+    color: #1e2167;
+
+
+}
+
+.rightSection img {
+    width: 80%;
+    margin: 20px 0;
+    animation: scaleAnimation 2s ease-in-out infinite alternate;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+.purple {
+    color: rgb(169, 98, 236);
+}
+
+.contactform {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 34px;
+    padding-top: 20px;
+}
+
+.contactform h1 {
+    font-family: 'Poppins', sans-serif;
+    padding: 12px 0;
+
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 10px;
+    color: rgb(169, 98, 236);
+    margin: 0 5px;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 0;
+}
+
+.btn-primary {
+    padding: 9px 14px;
+    background: #1e2167;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 2px solid white;
+    font-size: 15px;
+    margin: 0 3px;
+    cursor: pointer;
+
+}
+
+.btn-primary:hover {
+    background-color: rgb(170, 168, 166);
+    color: #1e2167;
+
+
+}
+
+footer {
+    background-color: rgb(52, 52, 150);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content p:first-child {
+    font-weight: bold;
+}
+
+.footer-content p:last-child {
+    font-style: italic;
+}
+
+.about-me {
+    background-color: #c6d2e7;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.about-me h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+    transition: transform 0.3s ease-in-out;
+    /* Adding transition for smooth effect */
+}
+
+.about-content p:hover {
+    transform: scale(1.1);
+    /* Increase the scale on hover */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .about-me {
+        padding: 20px;
+    }
+
+    .about-me h2 {
+        font-size: 1.8em;
+    }
+}
+
+
+
+
+/* Styles for Main Container */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles for Services Section */
+.services {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.services nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.services nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.services nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Styles for Projects Section */
+#projects {
+    margin-bottom: 40px;
+}
+
+.project-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Styles for Skills Section */
+#skills {
+    margin-bottom: 40px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    margin-bottom: 10px;
+}
+
+/* Styles for Contact Section */
+#contact {
+    margin-bottom: 40px;
+}
+
+#contact p {
+    margin-bottom: 10px;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #ff6600;
+}
